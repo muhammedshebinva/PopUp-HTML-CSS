@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        
+        <title>Popup </title>  
+        
+        
+        
+    
+        <link rel="stylesheet" href="style.css">
+        
+        <script>
+
+            function showPopup(newColor) {
+                var elem = document.getElementById('bg-modal');
+                elem.style.display = newColor;
+            }
+
+
+        </script>
+        
+        </head>
+        
+        <body style="background-color:black;">
+        
+            
+                <div class="row clearfix">
+                        
+                    <center>
+                        <a  onclick="showPopup('flex');"> <button class="buttonpopup">SHOW POPUP</button> </a>
+                    </center>
+
+                </div>
+        
+        
+            
+
+
+        <!--Popup Login Section -->
+        
+        <div id="bg-modal"> 
+
+            <div class="modal-contact" >
+                
+                 <img src="Images/smaile.png" height= "193px" width= "203px">
+                
+                <p> Account Created Successfully </p>
+                
+                 <a onclick= "showPopup('none');"> <button class="buttonpopupclose">CLOSE POPUP</button> </a>
+                
+                
+            </div>
+
+        </div>
+            
+        </body>
+</html>
